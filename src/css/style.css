@@ -1,0 +1,113 @@
+.table {
+  width: 99vw;
+  height: 98vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  background-color: cadetblue;
+  border-radius: 10px;
+}
+
+.column {
+  width: 31.5vw;
+  height: 96vh;
+  background-color: rgb(222, 222, 222);
+  border-radius: 10px;
+  position: relative;
+}
+
+.column_header {
+  margin: 0 0 16px 0;
+  padding: 16px;
+  background-color: rgb(224, 221, 221);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px 10px 0 0;
+}
+
+.add_card {
+  display: block;
+  border-radius: 0 0 10px 10px;
+  width: 29.5vw;
+  padding: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
+}
+
+.card_add_form {
+  width: 30vw;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+}
+
+.card_input {
+  width: 29.8vw;
+  box-sizing: border-box;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.card_add_btn {
+  width: 100px;
+  margin-top: 8px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(52, 180, 52);
+  cursor: pointer;
+}
+
+.cancel_add {
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+.cards {
+  padding: 0;
+  height: 80vh;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 30vw;
+  padding: 16px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  list-style-type: none;
+}
+
+.card:nth-child(n + 2) {
+  margin-top: 8px;
+}
+
+.delete_card {
+  padding: 1px 4px;
+  border-radius: 5px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: none;
+}
+
+.card:hover .delete_card {
+  display: block;
+}
+
+/* .dragged {
+  border-radius: 10px;
+  position: absolute;
+  z-index: 999;
+  pointer-events: none;
+  background: #fff;
+} */
